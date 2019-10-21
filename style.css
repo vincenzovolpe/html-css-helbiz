@@ -24,8 +24,6 @@
 .column {
     float: left;
     padding: 0 15px;
-    border: 1px solid black;
-    height: 500px;
 }
 
 .half.column  {
@@ -152,7 +150,43 @@ header {
 }
 
 .product {
-    background-color: lightgrey;
+    background-color: #FAFAFA;
     padding: 10px;
-    height: 500px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.product img {
+    width: 100%;
+    display: inline-block;
+}
+
+.product h2 {
+    margin: 15px 0;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.product a {
+    color: #0070c8;
+    font-size: 20px;
+    position: relative;
+}
+
+.product a::after {
+    content: url(https://helbiz.com/asset/pages/newhome/images/Arrow.svg);
+    width: 50px;
+    position: absolute;
+    top: 0;
+    right: -40px;
+}
+
+.product .product_logo {
+    width: 25%;
+    margin: 15px 0;
+}
+
+.product .product_img {
+    max-width: 30%;
+    margin: 20px 0;
 }
