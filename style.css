@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.column {
+    float: left;
+    padding: 0 15px;
+    border: 1px solid black;
+    height: 500px;
+}
+
+.half.column  {
+    width: 50%;
+}
+
+.one.column  {
+    width: 100%;
+}
+/*** fine layout base ***/
+
+/*** inizio header ***/
+header {
+    background-color: white;
+    height: 67px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.header-left {
+    width: 25%;
+    float: left;
+    line-height: 67px;
+}
+
+#logo {
+    position: relative;
+    height: 14px;
+}
+
+.header-right {
+    width: 75%;
+    height: 67px;
+    float: right;
+}
+
+/*** inizio menu ***/
+
+#main-menu {
+    list-style-type: none;
+    float: right;
+}
+
+#main-menu li {
+    float: left;
+}
+
+#main-menu li:not(.language) {
+    margin-right: 24px;
+}
+
+/* alternativa con i bordi per fare le righe verticali che separano le lingue
+#main-menu li.language a {
+    padding: 5px;
+}
+
+#main-menu li.language:nth-child(7) a {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+*/
+
+#main-menu li.language:not(:last-child)::after {
+    content: '|';
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 20px;
+}
+
+#main-menu li a {
+    font-size: 12px;
+    line-height: 67px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/*** fine menu ***/
+/*** fine header ***/
+
+/*** inizio jumbotron ***/
+#jumbo {
+    height: 560px;
+    background-image: url('https://www.helbiz.com/asset/pages/newhome/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 67px;
+    position: relative;
+}
+
+#jumbo-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.jumbo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.jumbo-text h1 {
+    font-size: 40px;
+}
+
+.jumbo-text p {
+    margin: 12px 0;
+}
+/*** fine jumbotron ***/
+
+/*** inizio altre sezioni ... ***/
+#second {
+    padding-top: 80px;
+}
+
+.product {
+    background-color: lightgrey;
+    padding: 10px;
+    height: 500px;
+}
