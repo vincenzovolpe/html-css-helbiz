@@ -147,6 +147,7 @@ header {
 /*** inizio altre sezioni ... ***/
 #second {
     padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .product {
@@ -190,3 +191,106 @@ header {
     max-width: 30%;
     margin: 20px 0;
 }
+
+
+/* Inizio Sezione THird */
+#third {
+    position: relative;
+    padding-bottom: 16px;
+    margin-bottom: 80px;
+}
+
+.third_top {
+    background: url(https://helbiz.com/asset/pages/newhome/images/HelbizBanner.jpg) 0 no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.third_bottom {
+    width: 85%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+
+.third_bottom h2{
+    font-size: 36px;
+    position: relative;
+    left: 30px;
+    width: 25%;
+    font-weight: 600;
+    font-style: normal;
+    float: left;
+}
+
+.third_bottom #steps{
+    position: relative;
+    right: 30px;
+    width: 25%;
+    float: right;
+}
+
+.third_bottom h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.third_bottom p {
+    font-size: 16px;
+    color: #373a3c;
+}
+
+.img-slider {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+#img-iphone {
+    z-index: 2;
+    height: 84%;
+    top: 160px;
+}
+
+#slider-one {
+    z-index: 1;
+    height: 69%;
+    top: 192px;
+}
+
+#dot-slider {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 25px;
+}
+
+#dot-slider ul {
+
+}
+
+#dot-slider li {
+    margin: 0 7px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+#dot-slider li::before {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: "";
+}
+
+#dot-slider li.attivo {
+    background-color: black;
+}
+/* Fine sezione Third */
