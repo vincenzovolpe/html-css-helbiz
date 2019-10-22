@@ -23,7 +23,7 @@
 
 .column {
     float: left;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .half.column  {
@@ -152,7 +152,6 @@ header {
 
 .product {
     background-color: #FAFAFA;
-    padding: 10px;
     text-align: center;
     padding: 50px 0;
 }
@@ -335,7 +334,7 @@ header {
     text-decoration: underline;
 }
 
-#smart a:last-child::after {
+#smart a::after {
     content: url(https://helbiz.com/asset/pages/newhome/images/arrow-white.svg);
     width: 50px;
     position: absolute;
@@ -344,4 +343,56 @@ header {
     font-size: 20px;
 }
 
+.dimensione {
+    min-height: 600px;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.getapp {
+    background: url(https://helbiz.com/asset/pages/newhome/images/HelbiZAPP.png) bottom no-repeat,linear-gradient(#41566a,#252f38) 50% no-repeat;
+    background-size: 530px,100%;
+}
+
+
+.around {
+    background: url(https://helbiz.com/asset/pages/newhome/images/Cities-1500.jpg) 50% no-repeat;
+    background-size: cover;
+}
+
+.colonna h2{
+    font-family: neue-haas-grotesk-display,Arial,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+
+.colonna p {
+    font-size: 21px;
+    margin-bottom: 16px;
+}
+
+.colonna a {
+    font-size: 21px;
+    color: #fff;
+    position: relative;
+    margin: 0 40px;
+    text-decoration: none;
+}
+
+
+.colonna a::after {
+    content: url(https://helbiz.com/asset/pages/newhome/images/arrow-white.svg);
+    width: 50px;
+    position: absolute;
+    top: 0;
+    right: -40px;
+    font-size: 20px;
+}
+
+.colonna a:hover {
+    text-decoration: underline;
+}
 /* Fine sezione Fourth */
