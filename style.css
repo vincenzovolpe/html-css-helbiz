@@ -172,6 +172,11 @@ header {
     color: #0070c8;
     font-size: 20px;
     position: relative;
+    text-decoration: none;
+}
+
+.product a:hover {
+    text-decoration: underline;
 }
 
 .product a::after {
@@ -281,3 +286,62 @@ header {
     background-color: black;
 }
 /* Fine sezione Third */
+
+
+/* Inizio Sezione Fourth */
+.one {
+    background: url("https://helbiz.com/asset/pages/newhome/images/ScooterHelbiz-2400.jpg") 0 no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+    min-height: 500px;
+    color: #fff;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+#smart {
+    width: 50%;
+    float: right;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 250px;
+    padding: 0 15px;
+    right: 15px;
+    text-align: center;
+}
+
+#smart h2 {
+    font-family: neue-haas-grotesk-display,Arial,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+
+#smart p {
+    font-size: 21px;
+    margin-bottom: 16px;
+}
+
+#smart a {
+    margin-left: 10px;
+    font-size: 21px;
+    position: relative;
+    text-decoration: none;
+}
+
+#smart a:hover {
+    text-decoration: underline;
+}
+
+#smart a:last-child::after {
+    content: url(https://helbiz.com/asset/pages/newhome/images/arrow-white.svg);
+    width: 50px;
+    position: absolute;
+    top: 0;
+    right: -40px;
+    font-size: 20px;
+}
+
+/* Fine sezione Fourth */
